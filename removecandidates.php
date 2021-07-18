@@ -145,7 +145,7 @@ Kernersville Lodge 669 A.F. &amp; A.M.
 
 	<div class="container">
 		<h3>
-			<a href="candidates.php" id="navlink">Candidates</a> | <a href="registercoach.php" id="navlink">Reigster Candidates</a><?php if ($_SESSION["UserRights"] > 0) { echo ' | <a href="removecandidates.php" id="navlink">Remove Candidates</a>'; }  ?> | <a href="actions/dologout.php" id="navlink">Logout</a>
+			<a href="candidates.php" id="navlink">Candidates</a> | <a href="registercandidates.php" id="navlink">Reigster Candidates</a><?php if ($_SESSION["UserRights"] > 0) { echo ' | <a href="removecandidates.php" id="navlink">Remove Candidates</a>'; }  ?> | <a href="actions/dologout.php" id="navlink">Logout</a>
 		</h3>
 	</div>
 	<div class="container">

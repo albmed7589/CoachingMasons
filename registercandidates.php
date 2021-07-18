@@ -144,12 +144,12 @@ Kernersville Lodge 669 A.F. &amp; A.M.
 </div>
 
 	<div class="container">
+	<form method='get' action='createregistration.php'>
 		<h3>
 			<a href="candidates.php" id="navlink">Candidates</a> | <a href="registercandidates.php" id="navlink">Reigster Candidates</a><?php if ($_SESSION["UserRights"] > 0) { echo ' | <a href="removecandidates.php" id="navlink">Remove Candidates</a>'; }  ?> | <a href="actions/dologout.php" id="navlink">Logout</a>
 		</h3>
 	</div>
 	<div class="container">
-	<form method='post' action='actions/docandidatecontact.php'>
 			<?php
 				 
 				$query = "SELECT * from `candidates`";
@@ -158,12 +158,11 @@ Kernersville Lodge 669 A.F. &amp; A.M.
 				$res = $stmt->get_result();
 				$data = $res->fetch_all(MYSQLI_ASSOC);
 				 
-				echo "<table>\r\n";
-				echo "<tr><th>Candidate Name</th><th>Email</th><th>Phone Number</th><th>Coach</th><th>Last Contacted</th><th>Contacted By</th><th>Update Contact Date</th></tr>\r\n";
+				echo "<table>";
+				echo "<tr><th>Candidate Name</th><th>Email</th><th>Phone Number</th><th>Coach</th><th>Last Contacted</th><th>Contacted By</th></tr>";
 				
 				foreach ($data as $row) 
 				{
-					
 					echo "<tr>";
 					echo "<td>" . $row['CandidateName'] . "</td>"; 
 					echo "<td>" . $row['Email'] . "</td>";
@@ -171,17 +170,20 @@ Kernersville Lodge 669 A.F. &amp; A.M.
 					echo "<td>" . $row['Coach'] . "</td>";
 					echo "<td>" . $row['LastContactedDate'] . "</td>";
 					echo "<td>" . $row['LastContactedBy'] . "</td>";
-					echo "<td>" . "<input type='checkbox' name='Contact[]' value='" . $row['CandidateID'] . "' >" . "</td>";
-					echo "</tr>\r\n";
-					
+					echo "</tr>";
 				}
 				
-				echo "</table>\r\n";
+				echo "</table>";
 			?>
 			<br>
-			<input type='submit' value='Update Contact Date' name='candidate_contact' style='position:relative; left:350px; border: 2px solid blue; color: blue;'>
-	</form>
+			<input type='submit' value='Add 1' name='Add1' style='position:relative; left:90px; border: 2px solid blue; color: blue;'>
+			<input type='submit' value='Add 2' name='Add2' style='position:relative; left:140px; border: 2px solid blue; color: blue;'>
+			<input type='submit' value='Add 3' name='Add3' style='position:relative; left:190px; border: 2px solid blue; color: blue;'>
+			<input type='submit' value='Add 4' name='Add4' style='position:relative; left:240px; border: 2px solid blue; color: blue;'>
+			<input type='submit' value='Add 5' name='Add5' style='position:relative; left:290px; border: 2px solid blue; color: blue;'>
+			  
 	</div>
+	</form>
 </div>
 </div>
 </div>

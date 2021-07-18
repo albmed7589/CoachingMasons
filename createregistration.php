@@ -140,47 +140,70 @@ Kernersville Lodge 669 A.F. &amp; A.M.
 <div class='col-md-10 col-md-offset-1 view'>
 <div>
 	
-	<h1>Coaching Area</h1>
+	<h1>Coaching Area - Candidate Registration</h1>
 </div>
 
 	<div class="container">
-		<h3>
-			<a href="candidates.php" id="navlink">Candidates</a> | <a href="registercandidates.php" id="navlink">Reigster Candidates</a><?php if ($_SESSION["UserRights"] > 0) { echo ' | <a href="removecandidates.php" id="navlink">Remove Candidates</a>'; }  ?> | <a href="actions/dologout.php" id="navlink">Logout</a>
-		</h3>
-	</div>
-	<div class="container">
-	<form method='post' action='actions/docandidatecontact.php'>
-			<?php
-				 
-				$query = "SELECT * from `candidates`";
-				$stmt = $db->prepare($query);
-				$stmt->execute();
-				$res = $stmt->get_result();
-				$data = $res->fetch_all(MYSQLI_ASSOC);
-				 
-				echo "<table>\r\n";
-				echo "<tr><th>Candidate Name</th><th>Email</th><th>Phone Number</th><th>Coach</th><th>Last Contacted</th><th>Contacted By</th><th>Update Contact Date</th></tr>\r\n";
+		<?php 
+		  session_start();
+		  ob_start();
+		  include("../dbconnect.php");
+		  include("../_mysql.php");
+		  
+		 
+		  
+			if(isset($_GET['Add1'])){     ?>
 				
-				foreach ($data as $row) 
-				{
-					
-					echo "<tr>";
-					echo "<td>" . $row['CandidateName'] . "</td>"; 
-					echo "<td>" . $row['Email'] . "</td>";
-					echo "<td>" . $row['Phone'] . "</td>";
-					echo "<td>" . $row['Coach'] . "</td>";
-					echo "<td>" . $row['LastContactedDate'] . "</td>";
-					echo "<td>" . $row['LastContactedBy'] . "</td>";
-					echo "<td>" . "<input type='checkbox' name='Contact[]' value='" . $row['CandidateID'] . "' >" . "</td>";
-					echo "</tr>\r\n";
-					
-				}
-				
-				echo "</table>\r\n";
-			?>
-			<br>
-			<input type='submit' value='Update Contact Date' name='candidate_contact' style='position:relative; left:350px; border: 2px solid blue; color: blue;'>
-	</form>
+				<br>
+				  <div class="container">
+				  <form action="actions/doregistercandidates.php" method="post" style="border: 2px solid; width: 17%; padding: 5px 5px 5px 5px;">
+					<label for="uname"><b>Candidate Name</b></label>
+					<br>
+					<input type="text" placeholder="Candidate Name" name="CandidateName" required>
+				 <br>
+				 <br>
+					<label for="text"><b>Email</b></label>
+					<br>
+					<input type="text" placeholder="Email" name="Email" required>
+				<br>
+				<br>
+					<label for="text"><b>Phone Number</b></label>
+					<br>
+					<input type="text" placeholder="Phone Number" name="Phone" required>
+				 <br>
+				 <br>
+					<label for="text"><b>Address</b></label>
+					<br>
+					<input type="text" placeholder="Address" name="Address" required>
+				 <br>
+				 <br>
+					<label for="text"><b>Coach</b></label>
+					<br>
+					<input type="text" placeholder="Coach Name" name="Coach" required>
+				<br>
+				<br>
+					<button type="submit">Register Candidate</button>
+				</form>
+				<br>
+				  </div>
+				<br>
+
+			  
+			  <?php
+			
+			}else if(isset($_GET['Add2'])){
+				echo "Add2 is set";
+			}else if(isset($_GET['Add3'])){
+				echo "Add3 is set";
+			}else if(isset($_GET['Add4'])){
+				echo "Add4 is set";
+			}else if(isset($_GET['Add5'])){
+				echo "Add5 is set";
+			}else {
+				echo "Nothing is set";	
+			}
+		 
+		?>
 	</div>
 </div>
 </div>
