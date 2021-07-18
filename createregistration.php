@@ -158,6 +158,7 @@ Kernersville Lodge 669 A.F. &amp; A.M.
 				  <div class="container">
 				  <form action="actions/doregistercandidates.php" method="post" style="border: 2px solid; width: 17%; padding: 5px 5px 5px 5px;">
 					<label for="uname"><b>Candidate Name</b></label>
+					<input id="hid1" name="hid1" type="hidden" value="1">
 					<br>
 					<input type="text" placeholder="Candidate Name" name="CandidateName" required>
 				 <br>
