@@ -12,6 +12,8 @@
       $deleteUser = "DELETE from `candidates` WHERE `CandidateID`=".$deleteid;
       mysqli_query($db,$deleteUser);
 	  
+	  header("Location: ../candidates.php");
+	  
 	 
 	  echo "query = " . $deleteUser . "<br>";
     }
