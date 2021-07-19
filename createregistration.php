@@ -153,53 +153,101 @@ Kernersville Lodge 669 A.F. &amp; A.M.
 		 
 		  
 			if(isset($_GET['Add1'])){     ?>
-				
-				<br>
-				  <div class="container">
-				  <form action="actions/doregistercandidates.php" method="post" style="border: 2px solid; width: 17%; padding: 5px 5px 5px 5px;">
-					<label for="uname"><b>Candidate Name</b></label>
-					<input id="hid1" name="hid1" type="hidden" value="1">
-					<br>
-					<input type="text" placeholder="Candidate Name" name="CandidateName" required>
-				 <br>
-				 <br>
-					<label for="text"><b>Email</b></label>
-					<br>
-					<input type="text" placeholder="Email" name="Email" required>
-				<br>
-				<br>
-					<label for="text"><b>Phone Number</b></label>
-					<br>
-					<input type="text" placeholder="Phone Number" name="Phone" required>
-				 <br>
-				 <br>
-					<label for="text"><b>Address</b></label>
-					<br>
-					<input type="text" placeholder="Address" name="Address" required>
-				 <br>
-				 <br>
-					<label for="text"><b>Coach</b></label>
-					<br>
-					<input type="text" placeholder="Coach Name" name="Coach" required>
-				<br>
-				<br>
-					<button type="submit">Register Candidate</button>
+			
+				<form action="actions/doregistercandidates.php" method="post">
+				<input id="hid1" name="hid1" type="hidden" value="1">
+				<table>
+					<tr><th>Candidate Name</th><th>Email</th><th>Phone Number</th><th>Address</th><th>Coach Name</tr>
+					<tr><td><input type="text" placeholder="Candidate Name" name="CandidateName" required></td><td><input type="text" placeholder="Email" name="Email" required></td><td><input type="text" placeholder="Phone Number" name="Phone" required></td><td><input type="text" placeholder="Address" name="Address" required></td><td><input type="text" placeholder="Coach Name" name="Coach" required></tr>
+					
+					<tr><td colspan="5"><button type="submit">Register Candidate</button></td></tr>
+				</table>
 				</form>
-				<br>
-				  </div>
 				<br>
 
 			  
 			  <?php
 			
-			}else if(isset($_GET['Add2'])){
-				echo "Add2 is set";
+			}else if(isset($_GET['Add2'])){ 
+			?>
+
+				<form action="actions/doregistercandidates.php" method="post">
+				<input id="hid2" name="hid2" type="hidden" value="1">
+				<table>
+					<tr><th>Candidate Name</th><th>Email</th><th>Phone Number</th><th>Address</th><th>Coach Name</tr>
+					<tr><td><input type="text" placeholder="Candidate Name" name="CandidateName" required></td><td><input type="text" placeholder="Email" name="Email" required></td><td><input type="text" placeholder="Phone Number" name="Phone" required></td><td><input type="text" placeholder="Address" name="Address" required></td><td><input type="text" placeholder="Coach Name" name="Coach" required></tr>
+					
+					<tr><th>Candidate Name</th><th>Email</th><th>Phone Number</th><th>Address</th><th>Coach Name</tr>
+					<tr><td><input type="text" placeholder="Candidate Name" name="CandidateName2" required></td><td><input type="text" placeholder="Email" name="Email2" required></td><td><input type="text" placeholder="Phone Number" name="Phone2" required></td><td><input type="text" placeholder="Address" name="Address2" required></td><td><input type="text" placeholder="Coach Name" name="Coach2" required></tr>
+					
+					<tr><td colspan="5"><button type="submit">Register All Candidates</button></td></tr>
+				</table>
+				</form>
+				
+			<?php
 			}else if(isset($_GET['Add3'])){
-				echo "Add3 is set";
+			?>
+				<form action="actions/doregistercandidates.php" method="post">
+				<input id="hid3" name="hid3" type="hidden" value="1">
+				<table>
+					<tr><th>Candidate Name</th><th>Email</th><th>Phone Number</th><th>Address</th><th>Coach Name</tr>
+					<tr><td><input type="text" placeholder="Candidate Name" name="CandidateName" required></td><td><input type="text" placeholder="Email" name="Email" required></td><td><input type="text" placeholder="Phone Number" name="Phone" required></td><td><input type="text" placeholder="Address" name="Address" required></td><td><input type="text" placeholder="Coach Name" name="Coach" required></tr>
+					
+					<tr><th>Candidate Name</th><th>Email</th><th>Phone Number</th><th>Address</th><th>Coach Name</tr>
+					<tr><td><input type="text" placeholder="Candidate Name" name="CandidateName2" required></td><td><input type="text" placeholder="Email" name="Email2" required></td><td><input type="text" placeholder="Phone Number" name="Phone2" required></td><td><input type="text" placeholder="Address" name="Address2" required></td><td><input type="text" placeholder="Coach Name" name="Coach2" required></tr>
+					
+				    <tr><th>Candidate Name</th><th>Email</th><th>Phone Number</th><th>Address</th><th>Coach Name</tr>
+					<tr><td><input type="text" placeholder="Candidate Name" name="CandidateName3" required></td><td><input type="text" placeholder="Email" name="Email3" required></td><td><input type="text" placeholder="Phone Number" name="Phone3" required></td><td><input type="text" placeholder="Address" name="Address3" required></td><td><input type="text" placeholder="Coach Name" name="Coach3" required></tr>
+					
+					<tr><td colspan="5"><button type="submit">Register All Candidates</button></td></tr>
+				</table>
+				</form>
+			<?php
 			}else if(isset($_GET['Add4'])){
-				echo "Add4 is set";
+			?>
+				<form action="actions/doregistercandidates.php" method="post">
+				<input id="hid4" name="hid4" type="hidden" value="1">
+				<table>
+					<tr><th>Candidate Name</th><th>Email</th><th>Phone Number</th><th>Address</th><th>Coach Name</tr>
+					<tr><td><input type="text" placeholder="Candidate Name" name="CandidateName" required></td><td><input type="text" placeholder="Email" name="Email" required></td><td><input type="text" placeholder="Phone Number" name="Phone" required></td><td><input type="text" placeholder="Address" name="Address" required></td><td><input type="text" placeholder="Coach Name" name="Coach" required></tr>
+					
+					<tr><th>Candidate Name</th><th>Email</th><th>Phone Number</th><th>Address</th><th>Coach Name</tr>
+					<tr><td><input type="text" placeholder="Candidate Name" name="CandidateName2" required></td><td><input type="text" placeholder="Email" name="Email2" required></td><td><input type="text" placeholder="Phone Number" name="Phone2" required></td><td><input type="text" placeholder="Address" name="Address2" required></td><td><input type="text" placeholder="Coach Name" name="Coach2" required></tr>
+					
+				    <tr><th>Candidate Name</th><th>Email</th><th>Phone Number</th><th>Address</th><th>Coach Name</tr>
+					<tr><td><input type="text" placeholder="Candidate Name" name="CandidateName3" required></td><td><input type="text" placeholder="Email" name="Email3" required></td><td><input type="text" placeholder="Phone Number" name="Phone3" required></td><td><input type="text" placeholder="Address" name="Address3" required></td><td><input type="text" placeholder="Coach Name" name="Coach3" required></tr>
+					
+				    <tr><th>Candidate Name</th><th>Email</th><th>Phone Number</th><th>Address</th><th>Coach Name</tr>
+					<tr><td><input type="text" placeholder="Candidate Name" name="CandidateName4" required></td><td><input type="text" placeholder="Email" name="Email4" required></td><td><input type="text" placeholder="Phone Number" name="Phone4" required></td><td><input type="text" placeholder="Address" name="Address4" required></td><td><input type="text" placeholder="Coach Name" name="Coach4" required></tr>
+					
+					<tr><td colspan="5"><button type="submit">Register All Candidates</button></td></tr>
+				</table>
+				</form>
+			<?php
 			}else if(isset($_GET['Add5'])){
-				echo "Add5 is set";
+			?>
+				<form action="actions/doregistercandidates.php" method="post">
+				<input id="hid5" name="hid5" type="hidden" value="1">
+				<table>
+					<tr><th>Candidate Name</th><th>Email</th><th>Phone Number</th><th>Address</th><th>Coach Name</tr>
+					<tr><td><input type="text" placeholder="Candidate Name" name="CandidateName" required></td><td><input type="text" placeholder="Email" name="Email" required></td><td><input type="text" placeholder="Phone Number" name="Phone" required></td><td><input type="text" placeholder="Address" name="Address" required></td><td><input type="text" placeholder="Coach Name" name="Coach" required></tr>
+					
+					<tr><th>Candidate Name</th><th>Email</th><th>Phone Number</th><th>Address</th><th>Coach Name</tr>
+					<tr><td><input type="text" placeholder="Candidate Name" name="CandidateName2" required></td><td><input type="text" placeholder="Email" name="Email2" required></td><td><input type="text" placeholder="Phone Number" name="Phone2" required></td><td><input type="text" placeholder="Address" name="Address2" required></td><td><input type="text" placeholder="Coach Name" name="Coach2" required></tr>
+					
+				    <tr><th>Candidate Name</th><th>Email</th><th>Phone Number</th><th>Address</th><th>Coach Name</tr>
+					<tr><td><input type="text" placeholder="Candidate Name" name="CandidateName3" required></td><td><input type="text" placeholder="Email" name="Email3" required></td><td><input type="text" placeholder="Phone Number" name="Phone3" required></td><td><input type="text" placeholder="Address" name="Address3" required></td><td><input type="text" placeholder="Coach Name" name="Coach3" required></tr>
+					
+				    <tr><th>Candidate Name</th><th>Email</th><th>Phone Number</th><th>Address</th><th>Coach Name</tr>
+					<tr><td><input type="text" placeholder="Candidate Name" name="CandidateName4" required></td><td><input type="text" placeholder="Email" name="Email4" required></td><td><input type="text" placeholder="Phone Number" name="Phone4" required></td><td><input type="text" placeholder="Address" name="Address4" required></td><td><input type="text" placeholder="Coach Name" name="Coach4" required></tr>
+					
+					<tr><th>Candidate Name</th><th>Email</th><th>Phone Number</th><th>Address</th><th>Coach Name</tr>
+					<tr><td><input type="text" placeholder="Candidate Name" name="CandidateName5" required></td><td><input type="text" placeholder="Email" name="Email5" required></td><td><input type="text" placeholder="Phone Number" name="Phone5" required></td><td><input type="text" placeholder="Address" name="Address5" required></td><td><input type="text" placeholder="Coach Name" name="Coach5" required></tr>
+					
+					<tr><td colspan="5"><button type="submit">Register All Candidates</button></td></tr>
+				</table>
+				</form>
+			<?php
 			}else {
 				echo "Nothing is set";	
 			}

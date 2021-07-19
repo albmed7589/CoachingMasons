@@ -179,7 +179,7 @@ Kernersville Lodge 669 A.F. &amp; A.M.
 				echo "</table>\r\n";
 			?>
 			<br>
-			<input type='submit' value='Update Contact Date' name='candidate_contact' style='position:relative; left:350px; border: 2px solid blue; color: blue;'>
+			<input type='submit' value='Update Contact Date' name='candidate_contact' style='border: 2px solid blue; color: blue;'>
 	</form>
 	</div>
 </div>

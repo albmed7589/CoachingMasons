@@ -176,11 +176,11 @@ Kernersville Lodge 669 A.F. &amp; A.M.
 				echo "</table>";
 			?>
 			<br>
-			<input type='submit' value='Add 1' name='Add1' style='position:relative; left:90px; border: 2px solid blue; color: blue;'>
-			<input type='submit' value='Add 2' name='Add2' style='position:relative; left:140px; border: 2px solid blue; color: blue;'>
-			<input type='submit' value='Add 3' name='Add3' style='position:relative; left:190px; border: 2px solid blue; color: blue;'>
-			<input type='submit' value='Add 4' name='Add4' style='position:relative; left:240px; border: 2px solid blue; color: blue;'>
-			<input type='submit' value='Add 5' name='Add5' style='position:relative; left:290px; border: 2px solid blue; color: blue;'>
+			<input type='submit' value='Add 1' name='Add1' style='margin-right: 25px; border: 2px solid blue; color: blue;'>
+			<input type='submit' value='Add 2' name='Add2' style='margin-right: 25px; border: 2px solid blue; color: blue;'>
+			<input type='submit' value='Add 3' name='Add3' style='margin-right: 25px; border: 2px solid blue; color: blue;'>
+			<input type='submit' value='Add 4' name='Add4' style='margin-right: 25px; border: 2px solid blue; color: blue;'>
+			<input type='submit' value='Add 5' name='Add5' style='margin-right: 25px; border: 2px solid blue; color: blue;'>
 			  
 	</div>
 	</form>
