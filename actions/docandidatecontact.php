@@ -15,6 +15,7 @@
 	  
 	 
 	  echo "query = " . $contactUser . "<br>";
+	  header("Location: ../candidates.php");
     }
   }else{ echo "fail"; }
  

@@ -179,7 +179,7 @@ Kernersville Lodge 669 A.F. &amp; A.M.
 				echo "</table>\r\n";
 			?>
 			<br>
-			<input type='submit' value='Delete' name='candidate_delete' style='position:relative; left:350px; border: 2px solid red; color: red;'>
+			<input type='submit' value='Delete' name='candidate_delete' style='border: 2px solid red; color: red;'>
 	</form>
 	</div>
 </div>
